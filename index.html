@@ -8,7 +8,28 @@
     <link rel="apple-touch-icon" href="/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="facebook-domain-verification" content="up6lw9iua0efh7x1pr0l6w2xbmu5cw" />
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap">
     <title>OrdaCash - Fast Loans, Brighten Your Future</title>
+    <script>
+      // rem 适配：1rem = 10px（以设计稿为基准），移动端按 375 设计稿缩放；
+      // PC 端大屏按 1920 设计稿（内容区 1600），笔记本端（≤1710px）整体按 1200/1600 = 0.75 等比缩小
+      (function (doc, win) {
+        var docEl = doc.documentElement
+        function setRem() {
+          var width = docEl.clientWidth || win.innerWidth
+          var size = width <= 768
+            ? Math.min(Math.max(width / 375 * 10, 8.5), 12)
+            : width <= 1710 ? 7.5 : 10
+          docEl.style.fontSize = size + 'px'
+        }
+        setRem()
+        win.addEventListener('resize', setRem)
+        win.addEventListener('pageshow', function (e) {
+          if (e.persisted) setRem()
+        })
+      })(document, window)
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-43SJ85DHX4"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -29,8 +50,8 @@
       }(window, document, 'ttq');
     </script>
 
-    <script type="module" crossorigin src="/assets/index-CL4vGAcG.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DAX5vH7O.css">
+    <script type="module" crossorigin src="/assets/index-CAYcoydF.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-ccZtuzWX.css">
   </head>
   <body>
     <div id="app"></div>
